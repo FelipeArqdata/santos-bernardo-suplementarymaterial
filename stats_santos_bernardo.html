@@ -7482,7 +7482,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="PRINCIPAL-ANALYSES">PRINCIPAL ANALYSES<a class="anchor-link" href="#PRINCIPAL-ANALYSES">¶</a></h3>
+<h2 id="Santos-and-Bernardo-2025-supplementary-material"><strong>Santos and Bernardo 2025 supplementary material</strong><a class="anchor-link" href="#Santos-and-Bernardo-2025-supplementary-material">¶</a></h2><p><strong>Authors:</strong> Felipe Pinto dos Santos and Danilo Vicensotto Bernardo<br/>
+<strong>Year:</strong> 2025<br/>
+<strong>Software:</strong> Jupiter notebook<br/>
+<strong>Programming language:</strong> Python</p>
+<h4 id="Abstract:-This-Supplementary-material-contain-the-analytical-procedures-of-the-study-%22Evolutionary-implications-of-violence-in-complex-societies-in-the-central-Andean-region,-a-bioarchaeological-analysis%22-a-chapter-of-the-volume-%22Routledge-Handbook-of-the-Archeology-of-Violence-in-the-America.-The-main-purpose-of-this-analysis-is-to-compare-trauma-incidence-in-central-Peru-across-three-archaeological-periods-of-Andean-societies:-the-Early-Intermediate-Period-(EIP),-the-Middle-Horizon-(MH),-and-the-Late-Intermediate-Period-(LIP).-Based-on-the-results,-this-study-discusses-the-possible-application-of-the-theoretical-framework-of-Cultural-Multilevel-Selection-in-the-context-of-Andean-history."><strong>Abstract:</strong> This Supplementary material contain the analytical procedures of the study "Evolutionary implications of violence in complex societies in the central Andean region, a bioarchaeological analysis" a chapter of the volume "Routledge Handbook of the Archeology of Violence in the America. The main purpose of this analysis is to compare trauma incidence in central Peru across three archaeological periods of Andean societies: the Early Intermediate Period (EIP), the Middle Horizon (MH), and the Late Intermediate Period (LIP). Based on the results, this study discusses the possible application of the theoretical framework of Cultural Multilevel Selection in the context of Andean history.<a class="anchor-link" href="#Abstract:-This-Supplementary-material-contain-the-analytical-procedures-of-the-study-%22Evolutionary-implications-of-violence-in-complex-societies-in-the-central-Andean-region,-a-bioarchaeological-analysis%22-a-chapter-of-the-volume-%22Routledge-Handbook-of-the-Archeology-of-Violence-in-the-America.-The-main-purpose-of-this-analysis-is-to-compare-trauma-incidence-in-central-Peru-across-three-archaeological-periods-of-Andean-societies:-the-Early-Intermediate-Period-(EIP),-the-Middle-Horizon-(MH),-and-the-Late-Intermediate-Period-(LIP).-Based-on-the-results,-this-study-discusses-the-possible-application-of-the-theoretical-framework-of-Cultural-Multilevel-Selection-in-the-context-of-Andean-history.">¶</a></h4>
 </div>
 </div>
 </div>
@@ -7493,7 +7497,18 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Descriptive-statistics">Descriptive statistics<a class="anchor-link" href="#Descriptive-statistics">¶</a></h3>
+<h2 id="1.-Data-Loading-and-Preparation">1. Data Loading and Preparation<a class="anchor-link" href="#1.-Data-Loading-and-Preparation">¶</a></h2><h3 id="1.1-Importing-Libraries-and-Initial-Loading">1.1 Importing Libraries and Initial Loading<a class="anchor-link" href="#1.1-Importing-Libraries-and-Initial-Loading">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The first step is importing the necessary libraries and loading the dataset. The following code demonstrates the import of essential libraries such as <code>numpy</code> for numerical operations, <code>pandas</code> for data manipulation, <code>statsmodels</code> for statistical modeling, and <code>matplotlib.pyplot</code> for visualization.</p>
 </div>
 </div>
 </div>
@@ -7502,20 +7517,19 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">statsmodels</span>
-<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-<span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span> 
+<span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">smf</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
 
 <span class="c1"># === 1) load data ===</span>
 <span class="n">file_path</span> <span class="o">=</span> <span class="s2">"tr_data_andescentral.xlsx"</span>  
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> <span class="c1"># show the structure of the data (coluns and rows)</span>
 </pre></div>
 </div>
 </div>
@@ -7526,7 +7540,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7698,12 +7712,23 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1.2-Variable-Selection">1.2 Variable Selection<a class="anchor-link" href="#1.2-Variable-Selection">¶</a></h3><p>In the following cell, the variables of interesting was select, that is  <code>n_id</code> and <code>n_id_affect</code>. This two columns are extracted into separate variables. This step is crucial for focusing on relevant data and simplifying future operations.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># select variables for analyses</span>
@@ -7715,17 +7740,26 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1.3-Descriptive-Statistics">1.3 Descriptive Statistics<a class="anchor-link" href="#1.3-Descriptive-Statistics">¶</a></h3><p>To understand the distribution and basic characteristics of the variables, descriptive statistics are calculated. The <code>describe()</code> method of pandas provides a statistical summary, including count, mean, standard deviation, minimum and maximum values, and quartiles.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">### descriptive statistics </span>
-
-<span class="n">subset</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">'n_id'</span><span class="p">,</span><span class="s1">'n_id_affect'</span><span class="p">]]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">subset</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">'n_id'</span><span class="p">,</span><span class="s1">'n_id_affect'</span><span class="p">]]</span> <span class="c1"># select coluns </span>
 <span class="nb">print</span><span class="p">(</span><span class="n">subset</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -7753,12 +7787,34 @@ max    77.000000    52.000000
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>These values provide an overview of the centrality, dispersion, and shape of the distributions of the <code>n_id</code> and <code>n_id_affect</code> variables.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1.4-Visualization:-Histograms">1.4 Visualization: Histograms<a class="anchor-link" href="#1.4-Visualization:-Histograms">¶</a></h3><p>Histograms are powerful visual tools for understanding the distribution of a single variable. The following code generates histograms for <code>n_id</code> and <code>n_id_affect</code>, allowing observation of the the total number of individual observed and the count events of truma.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Ploting histogram of variables: </span>
@@ -7796,12 +7852,34 @@ max    77.000000    52.000000
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Observing the plots, it is notable that the values of both variables are concentrated at the lower values at the x-axis, with higher values more dispersed. Visually, this type of distribution is very similar to a Poisson or Negative Binomial distribution</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1.5-Relative-Frequency-per-Period">1.5 Relative Frequency per Period<a class="anchor-link" href="#1.5-Relative-Frequency-per-Period">¶</a></h3><p>To analyze the relationship between trauma occurrence and the periods, the relative frequency per period was calculated. This procedure involves grouping the data by period and calculating the proportion of <code>n_id_affect</code> (the number of individuals affected) relative to <code>n_id</code> (the number of individuals observed).</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculating the relative frequency per period</span>
@@ -7836,12 +7914,23 @@ dtype: float64
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>These values indicate that the relative frequency of individuals affected by trauma in the LIP period was higher than in the previous one, as expected based on the assumptions of this study. In the following code cell, a bar chart was generated to visualize the differences in relative frequency by period.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Ploting relative frequence per period: </span>
@@ -7894,7 +7983,29 @@ dtype: float64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Apling-model">Apling model<a class="anchor-link" href="#Apling-model">¶</a></h3>
+<p>The bar chart shows that the relative frequency of trauma tended to be higher in the more recent periods.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="2.-Statistical-Modeling:-GLM-with-Negative-Binomial-Distribution">2. Statistical Modeling: GLM with Negative Binomial Distribution<a class="anchor-link" href="#2.-Statistical-Modeling:-GLM-with-Negative-Binomial-Distribution">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.1-Data-Preparation-for-Modeling">2.1 Data Preparation for Modeling<a class="anchor-link" href="#2.1-Data-Preparation-for-Modeling">¶</a></h3><p>Before fitting a statistical model, the data was prepared. The relevant variables was selected, missing values was handeling , and variables was transforming, such as creating an <code>offset</code> for count models. An offset term, defined as the natural logarithm of the total individuals observed (<code>n_id</code>), is included in the model to adjust the analysis of trauma counts (<code>n_id_affect</code>) by accounting for differences in exposure (<code>n_id</code>). This procedure adjusts for unequal sample sizes, ensuring that trauma counts are modeled as rates relative to the number of individuals observed rather than as raw counts. In practical terms, this prevents samples of different sizes from being treated as equally reliable, since larger samples provide more precise information about trauma rates than smaller ones</p>
 </div>
 </div>
 </div>
@@ -7903,27 +8014,7 @@ dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">"""</span>
-<span class="sd">Script simples para:</span>
-<span class="sd">1) Estimar alpha (NB2) considerando offset (e period na média via Poisson)</span>
-<span class="sd">2) Refitar GLM NB com alpha_hat</span>
-<span class="sd">3) Exibir diagnósticos: AIC, BIC, logLik e Pearson Chi2/df</span>
-<span class="sd">"""</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Select the variables of interest </span>
@@ -7933,39 +8024,37 @@ dtype: float64
 
 <span class="c1"># drop NA data</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'period'</span><span class="p">,</span><span class="s1">'n_id'</span><span class="p">,</span><span class="s1">'n_id_affect'</span><span class="p">])</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># evitar log(0)</span>
+
+<span class="c1"># avoid log(0)</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s1">'n_id'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">data</span><span class="p">[</span><span class="s1">'offset'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">'n_id'</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Define the MH period as baseline for analyses </span>
+<span class="n">data</span><span class="p">[</span><span class="s1">'offset'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">'n_id'</span><span class="p">])</span> <span class="c1"># define n_id as offset</span>
+
+<span class="c1"># Define the MH period as baseline for analyses </span>
 <span class="n">data</span><span class="p">[</span><span class="s1">'period'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Categorical</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">'period'</span><span class="p">],</span> <span class="n">categories</span><span class="o">=</span><span class="p">[</span><span class="s1">'MH'</span><span class="p">,</span><span class="s1">'EIP'</span><span class="p">,</span><span class="s1">'LIP'</span><span class="p">],</span> <span class="n">ordered</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The steps above ensure that the data are in the correct format and that problematic values (such as log(0)) are properly handled, in addition to defining a reference category for the period variable. In this analysis, the Middle Horizon (MH) is used as the reference.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.2-Mean-and-Variance-Analysis">2.2 Mean and Variance Analysis<a class="anchor-link" href="#2.2-Mean-and-Variance-Analysis">¶</a></h3><p>For count models, it is important to check the relationship between the mean and variance of the data. In Poisson distributions, the mean equals the variance. Significant deviations indicate the need for more flexible models, such as the Negative Binomial.</p>
 </div>
 </div>
 </div>
@@ -7974,14 +8063,10 @@ dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">###########################################</span>
-
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"n_id_affect"</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"n_id_affect"</span><span class="p">]</span>
 
 <span class="n">media</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="n">variancia</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -8009,12 +8094,34 @@ Razão Var/Média: 14.067375886524822
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The results above indicate that the variance/Mean ratio is significantly greater than 1 indicates overdispersion, justifying the use of a Negative Binomial model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.3-Estimation-of-mu-via-Poisson-Model">2.3 Estimation of <code>mu</code> via Poisson Model<a class="anchor-link" href="#2.3-Estimation-of-mu-via-Poisson-Model">¶</a></h3><p>For a better application of the Negative Binomial distribution model, a dispersion parameter (<code>alpha</code>) was calculated. Before estimating this value, a Poisson model is fitted to obtain the mu values (expected means), which are then used in the formula to estimate alpha</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># fórmula do modelo (mantendo a comparação por período)</span>
@@ -8069,12 +8176,83 @@ Razão Var/Média: 14.067375886524822
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The mu values represent the expected means of <code>n_id_affect</code> under the Poisson model, taking into account <code>period</code> and <code>offset</code>. It is possible to see the differences between the values: the observed values contain higher numbers compared to the predicted ones. In the cell below, a histogram comparing the two sets of values is plotted:</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Histogram of observed values</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="s1">'auto'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Observed (y)"</span><span class="p">)</span>
+
+<span class="c1"># Histogram of predicted values (mu)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="s1">'auto'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">"Predicted (mu)"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Count values"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Frequency"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Observed vs Predicted Counts"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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Gxu19TY2Nrh+/XqJ7wsODsbs2bOrtDZd91fivUrbV0fH2pW2LyIioqqgsyMzhRQKhdqyEKLIuucFBgYiIyNDeqWkpFR1iURERKRFOjsyo1KpADwbobG1tZXWp6enFxmteZ5SqYRSqazy+oiIiEg36OzIjKOjI1QqFaKioqR1ubm5iI6ORufOnbVYGREREekSrY7MPHz4EH///be0nJiYiNOnT6N27dpo0KABJk6ciHnz5sHJyQlOTk6YN28eTExMEBAQoMWqiYiISJdoNczExcXBy8tLWp40aRIAYPjw4QgLC8PUqVPx+PFjjB07Fvfv30fHjh2xZ88emJuba6tkIiIi0jFaDTOenp4QQpS4XaFQICgoCEFBQa+uKCIiIpIVnZ0zQ0RERFQWDDNEREQkazp7aTbJ2O8Tqm7f/ZZV3b6JiEiWODJDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESypq/tAog0Ebg1vlL2E+zXulL2Q0RE2sORGSIiIpI1hhkiIiKSNYYZIiIikjWdDjNBQUFQKBRqL5VKpe2yiIiISIfo/ATgli1bYu/evdKynp6eFqshIiIiXaPzYUZfX5+jMURERFQinT7NBAAJCQmws7ODo6Mj3nnnHVy7dk3bJREREZEO0emRmY4dO2L9+vVwdnbG7du3MXfuXHTu3Bnnz5+HlZVVse/JyclBTk6OtJyZmfmqyiUiIiIt0Okw4+vrK/25devWcHd3R+PGjbFu3TpMmjSp2PcEBwdj9uzZr6rEau+vxHuVtq+OjrUrbV9ERESFdP400/NMTU3RunVrJCQklNgmMDAQGRkZ0islJeUVVkhERESvmk6PzLwoJycHFy9eRLdu3Upso1QqoVQqX2FVREREpE06PTIzZcoUREdHIzExEX/99RcGDRqEzMxMDB8+XNulERERkY7Q6ZGZGzdu4N1338U///yDunXrolOnToiJiYGDg4O2SyMiIiIdodNh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vHgRy5cvh7u7OwCgV69ecHFxwZAhQ3Dy5EkcP34cw4YNg4eHB9zc3AAAPXr0QFxcHNavX4+EhATMmjUL586dK3c9DRs2xL59+5CWlob79++X2M7U1BT9+/fHzJkzcfHiRQQEBEjbGjRoAENDQ3z77be4du0aduzYgTlz5rz0uJ6enrhz5w4WLlyIq1evYuXKldi1a5dam6CgIAQHB2PZsmW4cuUK4uPjERoaiiVLlgAAvvnmG4SHh+PSpUu4cuUKfvnlF6hUKmkiNRFVDoYZIlLj6OiIkydPwsvLC5MnT0arVq3g7e2Nffv2YdWqVQD+70Z2tWrVQvfu3dGrVy80atQIERER0n569+6NmTNnYurUqWjfvj2ysrIwbNiwctezePFiREVFwd7eHq6uri9tO2TIEJw5cwbdunVDgwYNpPV169ZFWFgYfvnlF7Ro0QLz58/H119//dJ9NW/eHCEhIVi5ciXatGmD48ePY8qUKWptxowZgx9++AFhYWFo3bo1PDw8EBYWJo3MmJmZYcGCBXBzc0P79u2RlJSEnTt3SpOSiahyKMSLJ4WJiIiIZIT/e0BERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLLGMENERESyxjBDREREssYwQ0RERLL2/wC/X6AM7PS41QAAAABJRU5ErkJggg=="/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Visually, it is possible to perceive that the observed data have much more dispersion than the predicted Poisson values. This reinforces the use of a Negative Binomial distribution</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.4-Estimation-of-the-Dispersion-Parameter-(alpha)-for-NB2">2.4 Estimation of the Dispersion Parameter (<code>alpha</code>) for NB2<a class="anchor-link" href="#2.4-Estimation-of-the-Dispersion-Parameter-(alpha)-for-NB2">¶</a></h3><p>The <code>alpha</code> parameter in the Negative Binomial (NB2) distribution is crucial for modeling overdispersion. It is estimated using the method of moments, which compares the observed variance with the expected variance under the Poisson model.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># === 3) método dos momentos para alpha (NB2): Var(Y) ≈ mu + alpha*mu^2 ===</span>
@@ -8101,12 +8279,34 @@ Razão Var/Média: 14.067375886524822
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A value of <code>alpha_hat</code> greater than zero confirms the presence of overdispersion and the suitability of the Negative Binomial model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.5-Negative-Binomial-Model-Fitting-and-Comparison-with-Poisson">2.5 Negative Binomial Model Fitting and Comparison with Poisson<a class="anchor-link" href="#2.5-Negative-Binomial-Model-Fitting-and-Comparison-with-Poisson">¶</a></h3><p>With the estimated <code>alpha_hat</code>, the GLM model with Negative Binomial distribution is fitted. Subsequently, a comparison with the Poisson model is performed using the likelihood ratio test (LR stat) to assess whether the inclusion of the dispersion parameter significantly improves the model fit.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
@@ -8144,35 +8344,25 @@ Razão Var/Média: 14.067375886524822
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">resid_var</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">mu</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Var(y):"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Mean(y):"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Var/Mean (Poisson deveria ~1):"</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
-</pre></div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A very low p-value (close to zero) indicates that the Negative Binomial model fits the data significantly better than the Poisson model, confirming the importance of considering overdispersion.</p>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Var(y): 84.40425531914893
-Mean(y): 6.0
-Var/Mean (Poisson deveria ~1): 14.067375886524822
-</pre>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.7-AIC-Comparison">2.7 AIC Comparison<a class="anchor-link" href="#2.7-AIC-Comparison">¶</a></h3><p>Akaike Information Criterion (AIC) is a measure of the relative quality of statistical models for a given set of data. Models with lower AIC are generally preferred. The comparison of AIC between Poisson and Negative Binomial models reinforces the choice of the most suitable model:</p>
 </div>
 </div>
 </div>
@@ -8181,7 +8371,7 @@ Var/Mean (Poisson deveria ~1): 14.067375886524822
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Poisson AIC:"</span><span class="p">,</span> <span class="n">pois</span><span class="o">.</span><span class="n">aic</span><span class="p">)</span>
@@ -8205,15 +8395,37 @@ NB AIC: 466.3820037026725
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The significantly lower AIC for the Negative Binomial model confirms your relevance aplication over the Poisson model.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.8-GLM-NB-Model-Summary-and-Diagnostics">2.8 GLM NB Model Summary and Diagnostics<a class="anchor-link" href="#2.8-GLM-NB-Model-Summary-and-Diagnostics">¶</a></h3><p>The summary aplying below of the GLM Negative Binomial model provides a comprehensive overview of the fitting results, including coefficients, standard errors, p-values, and other statistics. In addition, important diagnostics such as log-likelihood, AIC, BIC, and Pearson Chi2/df are calculated to assess the quality of the fit and the presence of remaining overdispersion.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># === 4) refitar GLM NB com alpha_hat e calcular diagnósticos ===</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># === 4) fit the GLM NB with alpha_hat and caculate the model results ===</span>
 <span class="n">nb</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">glm</span><span class="p">(</span>
     <span class="n">formula</span><span class="o">=</span><span class="n">formula</span><span class="p">,</span>
     <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
@@ -8223,18 +8435,16 @@ NB AIC: 466.3820037026725
 
 <span class="nb">print</span><span class="p">(</span><span class="n">nb</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
 
-<span class="c1"># diagnósticos principais</span>
+<span class="c1"># model parameters </span>
 <span class="n">loglik</span> <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">llf</span>
 <span class="n">aic</span>    <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">aic</span>
-<span class="n">bic</span>    <span class="o">=</span> <span class="n">nb</span><span class="o">.</span><span class="n">bic</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">nb</span><span class="p">,</span> <span class="s2">"bic"</span><span class="p">)</span> <span class="k">else</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">nb</span><span class="o">.</span><span class="n">df_model</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">loglik</span><span class="p">)</span>  <span class="c1"># fallback se versão não tiver .bic</span>
 
-<span class="c1"># Pearson Chi2/df (checagem de dispersão remanescente)</span>
+<span class="c1"># Pearson Chi2/df (residual dispersion check)</span>
 <span class="n">pearson_chi2_df</span> <span class="o">=</span> <span class="p">(</span><span class="n">nb</span><span class="o">.</span><span class="n">resid_pearson</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">nb</span><span class="o">.</span><span class="n">df_resid</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== Diagnósticos do GLM NB (com alpha_hat) ==="</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"logLik : </span><span class="si">{</span><span class="n">loglik</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"AIC    : </span><span class="si">{</span><span class="n">aic</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"BIC    : </span><span class="si">{</span><span class="n">bic</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Pearson Chi2/df: </span><span class="si">{</span><span class="n">pearson_chi2_df</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8255,8 +8465,8 @@ Model:                            GLM   Df Residuals:                       92
 Model Family:        NegativeBinomial   Df Model:                            2
 Link Function:                    Log   Scale:                          1.0000
 Method:                          IRLS   Log-Likelihood:                -230.19
-Date:                Fri, 29 Aug 2025   Deviance:                       91.689
-Time:                        01:41:53   Pearson chi2:                     73.1
+Date:                Sat, 30 Aug 2025   Deviance:                       91.689
+Time:                        23:59:21   Pearson chi2:                     73.1
 No. Iterations:                     7   Pseudo R-squ. (CS):             0.1002
 Covariance Type:            nonrobust                                         
 ====================================================================================
@@ -8270,18 +8480,31 @@ C(period)[T.LIP]     0.5235      0.196      2.676      0.007       0.140       0
 === Diagnósticos do GLM NB (com alpha_hat) ===
 logLik : -230.1910
 AIC    : 466.3820
-BIC    : -327.2672
 Pearson Chi2/df: 0.7940
 </pre>
 </div>
 </div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>c:\ProgramData\anaconda3\Lib\site-packages\statsmodels\genmod\generalized_linear_model.py:1838: FutureWarning: The bic value is computed using the deviance formula. After 0.13 this will change to the log-likelihood based formula. This change has no impact on the relative rank of models compared using BIC. You can directly access the log-likelihood version using the `bic_llf` attribute. You can suppress this message by calling statsmodels.genmod.generalized_linear_model.SET_USE_BIC_LLF with True to get the LLF-based version now or False to retainthe deviance version.
-  warnings.warn(
-</pre>
 </div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The model summary above and diagnostics provide detailed information about the significance of predictors and the overall model fit.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2.9-Effect-Size-Table-(IRR)">2.9 Effect Size Table (IRR)<a class="anchor-link" href="#2.9-Effect-Size-Table-(IRR)">¶</a></h3><p>For count models, coefficients are often interpreted as Incidence Rate Ratios (IRR). The IRR table and its 95% confidence intervals was calculated to facilitate the interpretation of the effects of predictor variables.</p>
 </div>
 </div>
 </div>
@@ -8290,7 +8513,7 @@ Pearson Chi2/df: 0.7940
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ==== 3) Effect sizes table: IRR = exp(coef) with 95% CI ====</span>
@@ -8319,7 +8542,7 @@ Pearson Chi2/df: 0.7940
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Map labels for readability</span>
@@ -8367,7 +8590,18 @@ Intercept (MH) 0.237     0.180      0.311    0.000
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Comparing-antimortem-and-perimortem-trauma-types">Comparing antimortem and perimortem trauma types<a class="anchor-link" href="#Comparing-antimortem-and-perimortem-trauma-types">¶</a></h3>
+<p>These results show that the comparison between the reference period (C(period) = MH period) and the EIP does not indicate a statistical difference, which contradicts the initial expectation. However, the comparison with the LIP period does reveal such a difference, confirming the assumption of this study that the LIP period concentrated a higher incidence of trauma than the previous one. Only the second comparison aligns with the hypotheses derived from cultural multilevel selection regarding the role of warfare and conflict in the evolution of complex societies.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="3.-Trauma-Type-Analysis-comparation">3. Trauma Type Analysis comparation<a class="anchor-link" href="#3.-Trauma-Type-Analysis-comparation">¶</a></h2><h3 id="3.1-Selection-and-Aggregation-of-Trauma-Variables">3.1 Selection and Aggregation of Trauma Variables<a class="anchor-link" href="#3.1-Selection-and-Aggregation-of-Trauma-Variables">¶</a></h3><p>To compare trauma types (antemortem and perimortem) across periods, corresponding variables was selected and values aggregated (summed).</p>
 </div>
 </div>
 </div>
@@ -8376,12 +8610,10 @@ Intercept (MH) 0.237     0.180      0.311    0.000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Comparing antimortem and perimortem trauma types</span>
-
-<span class="c1">#selecting variables </span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#selecting variables </span>
 
 <span class="n">group_eip_anti</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'period'</span><span class="p">]</span> <span class="o">==</span><span class="s1">'EIP'</span><span class="p">,</span> <span class="s1">'n_id_antimortem'</span><span class="p">]</span>
 <span class="n">eip_anti</span> <span class="o">=</span> <span class="n">group_eip_anti</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span> 
@@ -8401,12 +8633,23 @@ Intercept (MH) 0.237     0.180      0.311    0.000
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>These steps below prepare the data for visualization and comparison of total trauma by period and type:</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sum_eip_anti</span> <span class="o">=</span> <span class="n">eip_anti</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -8421,12 +8664,23 @@ Intercept (MH) 0.237     0.180      0.311    0.000
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="3.2-Visualization:-Sum-of-Antemortem-Trauma-by-Period">3.2 Visualization: Sum of Antemortem Trauma by Period<a class="anchor-link" href="#3.2-Visualization:-Sum-of-Antemortem-Trauma-by-Period">¶</a></h3><p>A bar chart is used to visualize the sum of antemortem traumas in each period, facilitating the identification of trends or differences.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -8467,12 +8721,34 @@ Intercept (MH) 0.237     0.180      0.311    0.000
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The graph above shows that the MH and LIP periods have very similar values of antemortem trauma. The EIP concentrates very few cases, and since this information is limited in this period, your role in the comparison is not relevant</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="3.3-Visualization:-Sum-of-Perimortem-Trauma-by-Period">3.3 Visualization: Sum of Perimortem Trauma by Period<a class="anchor-link" href="#3.3-Visualization:-Sum-of-Perimortem-Trauma-by-Period">¶</a></h3><p>Similarly, a bar chart is generated for the sum of perimortem traumas by period, allowing for a visual comparison between trauma types.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -8510,6 +8786,17 @@ Intercept (MH) 0.237     0.180      0.311    0.000
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
 <img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjMAAAHFCAYAAAAHcXhbAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjguMCwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy81sbWrAAAACXBIWXMAAA9hAAAPYQGoP6dpAAArD0lEQVR4nO3de1RVdf7/8dfxdgSBY4JyUxCLaTJvmYW3RFMoU9Mua5owB7uNSZakqGPaVywXqJmTjX7tsr5emnLKaczMHIPJa1+1oczRrNXU+lraN5FS4xAhKHx+f/TzfD3iBQjY51PPx1pnrc4+m33e+2icp/tsNi5jjBEAAIClmjg9AAAAwE9BzAAAAKsRMwAAwGrEDAAAsBoxAwAArEbMAAAAqxEzAADAasQMAACwGjEDAACsRswA/997772nW265RXFxcXK73YqMjFSfPn00efJkp0dzlMvlUnZ2ttNj+Pnhhx+UnZ2tLVu2OD1KNQMHDlSXLl0a/Hk6duwol8vlu4WEhCgpKUkvvvhivT7Pli1b5HK56vW1zs7OlsvlqrftAcQMIOmtt95S37595fV6NX/+fOXl5WnRokXq16+fXn31VafHc9TOnTt13333OT2Gnx9++EGzZ88OyJhpTP369dPOnTu1c+dOrVixQi6XS+np6Vq6dGm9PUfPnj21c+dO9ezZs962CdS3Zk4PAASC+fPnKyEhQW+//baaNfu//y1++9vfav78+Q5O5gxjjE6cOKGgoCD17t3b6XF8Ts+FH7Vu3drvz2fIkCGKj4/XwoULNX78+J+07ZMnT8rlciksLCyg/g4A58KRGUDS0aNHFRER4RcypzVp4v+/yfk+dunYsaPGjh3ru3/6X8qbNm3S/fffr/DwcIWFhel3v/udSktLVVhYqN/85jdq3bq1oqOjlZWVpZMnT1501o4dO2r48OF6/fXX1a1bN7Vs2VKdOnXSM888U21dr9errKwsJSQkqEWLFoqNjVVmZqZKS0ur7dOECRP07LPP6oorrpDb7dbKlSvPub/1sV/Hjh1TRkaGYmNj1aJFC3Xq1EkzZsxQeXl5jeZq27atJGn27Nm+j1nOfO0/++wzpaWlqV27dnK73briiiu0ZMkSv22f/vhk1apVmjZtmqKjoxUSEqIRI0boyJEjKikp0e9//3tFREQoIiJCd999t77//vuL/vmctn37dvXu3VtBQUGKjY3VY489psrKSkk/RlliYqJuuOGGal/3/fffy+Px6MEHH6zxc53WunVrXX755fryyy/r9Fr8+c9/1uTJkxUbGyu3263PP//8vB8zrVu3Tn369FFwcLBCQ0OVkpKinTt3VpvprbfeUo8ePeR2u5WQkKAFCxbUer+AizIAzH333WckmYceesjs2rXLVFRUnHddSWbWrFnVlsfHx5v09HTf/eXLlxtJJiEhwUyePNnk5eWZefPmmaZNm5o777zT9OzZ08yZM8fk5+ebadOmGUnmqaeeuuis8fHxJjY21sTFxZlly5aZDRs2mNGjRxtJ5sknn/StV1paanr06GEiIiLMwoULzT/+8Q+zaNEi4/F4zPXXX2+qqqr89ik2NtZ069bNrFq1ymzatMl89NFH59zfn7pfZWVlplu3bqZVq1ZmwYIFJi8vzzz22GOmWbNm5qabbqr2Wp891549e8zGjRuNJHPvvfeanTt3mp07d5rPP//cGGPM/v37jcfjMV27djUvvviiycvLM5MnTzZNmjQx2dnZvm1v3rzZSDLx8fFm7NixZuPGjebZZ581ISEhZtCgQSYlJcVkZWX57d9DDz100T+f5ORkEx4ebmJiYswzzzxj3n77bfPwww8bSebBBx/0rbdo0SLjcrnMv//9b7+vX7JkiZFk9u/ff8HniY+PN8OGDfNbVlFRYdq1a2diYmLq9FrExsaa22+/3axbt86sX7/eHD161PfY5s2bfeu//PLLRpJJTU01a9euNa+++qq5+uqrTYsWLcz27dt96/3jH/8wTZs2Nf379zdr1qwxf/3rX80111xj4uLiDG8/qE/8bQKMMd9++63p37+/kWQkmebNm5u+ffua3NxcU1JS4rdubWPm7DfAUaNGGUlm4cKFfst79OhhevbsedFZ4+PjjcvlMnv27PFbnpKSYsLCwkxpaakxxpjc3FzTpEkTU1BQ4Lfea6+9ZiSZDRs2+O2Tx+Mxx44dq/Z854uZuu7Xs88+aySZ1atX+603b948I8nk5eVddK5vvvnmvH8ON9xwg2nfvr0pLi72Wz5hwgTTsmVL37ZOv0mPGDHCb73MzEwjyTz88MPV9q9NmzbVnu9sycnJRpJ54403/Jbff//9pkmTJubLL780xhjj9XpNaGiomThxot96nTt3NoMGDbro88THx5ubbrrJnDx50pw8edIcOHDApKenG0lmypQpdXotBgwYUO15zo6ZyspKExMTY7p27WoqKyt965WUlJh27dqZvn37+pYlJSWZmJgYU1ZW5lvm9XpNmzZtiBnUKz5mAiSFh4dr+/btKigo0Ny5czVy5Ej9+9//1vTp09W1a1d9++23dd728OHD/e5fccUVkqRhw4ZVW37mxwMXcuWVV6p79+5+y9LS0uT1erV7925J0vr169WlSxf16NFDp06d8t1uuOGGc35scP311+uSSy5p8P3atGmTWrVqpdtvv91vvdMfE73zzjt1nuvEiRN65513dMsttyg4ONhvv2+66SadOHFCu3btqvN+HDt2rEYfNYWGhurmm2/2W5aWlqaqqipt27bNt87dd9+tFStW+D7227Rpkz7++GNNmDChRvu7YcMGNW/eXM2bN1dCQoJWr16thx56SHPmzKnTa3Hbbbdd9Dk//fRTff311xozZozfR7AhISG67bbbtGvXLv3www8qLS1VQUGBbr31VrVs2dLvtRkxYkSN9g+oKWIGOEOvXr00bdo0/fWvf9XXX3+tRx55RF988cVPOgm4TZs2fvdbtGhx3uU1Pbk1KirqvMuOHj0qSTpy5Ij27t3re7M7fQsNDZUxplqgRUdH12yH/r+67tfRo0cVFRVV7Udz27Vrp2bNmvnmr8tcR48e1alTp/SnP/2p2n7fdNNNklRtv2uzH5Jq9GcUGRlZbdnZfz6S9NBDD6mkpEQvv/yyJGnx4sVq3769Ro4cedHnkKT+/furoKBA77//vj7++GN99913euaZZ9SiRYs6vRY1ea1Pz3+udWNiYlRVVaXjx4/r+PHjqqqquuDfVaC+8NNMwHk0b95cs2bN0h//+Ed99NFHvuVut7vaiaqSqr0JN6TCwsLzLgsPD5ckRUREKCgoSMuWLTvnNiIiIvzuN9Z1P8LDw/Xee+/JGOP3nEVFRTp16tRPmuuSSy5R06ZNNWbMmPOeQJuQkFC3wWvhyJEj1Zad/ecjSZdddpmGDh2qJUuWaOjQoVq3bp1mz56tpk2b1uh5PB6PevXqdc7H6vJa1OS1Pj3/4cOHqz329ddfq0mTJrrkkkt8f74X+rsK1BdiBtCP35jP9S/NTz75RNKP/+I8rWPHjtq7d6/feps2barVT7r8VPv379e//vUvv4+aVq1apdDQUN/1QIYPH66cnByFh4c3yht4TQ0ePFirV6/W2rVrdcstt/iWn77Y2+DBgy+6DbfbLUkqKyvzWx4cHKxBgwbpww8/VLdu3XxHUxpbSUmJ1q1b5/dR06pVq9SkSRMNGDDAb92JEycqNTVV6enpatq0qe6///56maGhXovLL79csbGxWrVqlbKysnwBVFpaqr/97W++n3CSpGuvvVZr1qzRk08+6fuoqaSkRG+++Wa9zAKcRswAkm644Qa1b99eI0aM0K9//WtVVVVpz549euqppxQSEqKJEyf61h0zZowee+wx/cd//IeSk5P18ccfa/HixfJ4PI02b0xMjG6++WZlZ2crOjpaL730kvLz8zVv3jzfG0lmZqb+9re/acCAAXrkkUfUrVs3VVVV6eDBg8rLy9PkyZOVlJTUaDOf9rvf/U5LlixRenq6vvjiC3Xt2lXvvvuucnJydNNNN2nIkCEX3UZoaKji4+P1xhtvaPDgwWrTpo0iIiLUsWNHLVq0SP3799d1112n8ePHq2PHjiopKdHnn3+uN998U5s2bWrwfQwPD9f48eN18OBB/epXv9KGDRv0wgsvaPz48YqLi/NbNyUlRZ07d9bmzZt11113qV27dvU2R0O8Fk2aNNH8+fM1evRoDR8+XOPGjVN5ebmefPJJfffdd5o7d65v3SeeeEI33nijUlJSNHnyZFVWVmrevHlq1aqVjh07Vm/7CRAzgKSZM2fqjTfe0B//+EcdPnxY5eXlio6O1pAhQzR9+nTfSaGSNGXKFHm9Xq1YsUILFizQtddeq9WrV9f4PIf60KNHD919992aNWuWPvvsM8XExGjhwoV65JFHfOu0atVK27dv19y5c/X888/rwIEDCgoKUlxcnIYMGaKOHTs22rxnatmypTZv3qwZM2boySef1DfffKPY2FhlZWVp1qxZNd7Of/3Xf2nKlCm6+eabVV5ervT0dK1YsUKdO3fW7t279cQTT2jmzJkqKipS69atlZiY6DtXpKFFRUVpyZIlysrK0r59+9SmTRs9+uijmj179jnX/81vfqPs7Owan/hbUw31WqSlpalVq1bKzc3VHXfcoaZNm6p3797avHmz+vbt61svJSVFa9eu1cyZM3XHHXcoKipKGRkZKisrO+9rAdSFyxhjnB4CQM117NhRXbp00fr1650eBfWkV69ecrlcKigocHoUwEocmQEAB3i9Xn30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IiJCw4YN08qVK2WM0bBhwxQREVFtvUGDBmnp0qV+y957771zhg8A1NW0adM0c+ZMlZeXq0WLFpoyZYrGjRvn9FioJWIGje6ee+7RhAkTJElLliw55zqtWrXSZZdd5rfsq6++avDZAPyyTJkyRWPHjlVwcLCio6PlcrmcHgl1QMyg0d14442qqKiQJN1www0OTwPglywiIqLaP5xgH2IGja5p06b65JNPfP8NAPWpuLhYe/bs8VvWpk0bZ4ZBoyBm4IiwsDCnRwDwM7Vly5Zql3tIT093aBo0Bpcxxjg9BAAAQF3xo9kAAMBqxAwAALAaMQMAAKxGzAAAAKsRMwAAwGrEDAAAsBoxAwAArEbMALBedna2evTo8ZO28cUXX8jlclW7ciyAwEfMAGhUY8eOlcvlksvlUvPmzdWpUydlZWWptLS0ztvMysrSO++8U49TArAJv84AQKO78cYbtXz5cp08eVLbt2/Xfffdp9LSUi1durRW2zHGqLKyUiEhIQoJCWmgaQEEOo7MAGh0brdbUVFR6tChg9LS0jR69GitXbtWxhjNnz9fnTp1UlBQkLp3767XXnvN93VbtmyRy+XS22+/rV69esntdmv79u3VPmaqqqrS448/rvbt28vtdqtHjx7auHGj3wz//Oc/ddVVV6lly5bq1auXPvzww8bafQD1jCMzABwXFBSkkydPaubMmVqzZo2WLl2qxMREbdu2TXfddZfatm2r5ORk3/pTp07VggUL1KlTJ7Vu3Vpbt271296iRYv01FNP6bnnntNVV12lZcuW6eabb9b+/fuVmJio0tJSDR8+XNdff71eeuklHThwQBMnTmzs3QZQT4gZAI765z//qVWrVmnQoEFauHChNm3apD59+kiSOnXqpHfffVfPPfecX8w8/vjjSklJOe82FyxYoGnTpum3v/2tJGnevHnavHmznn76aS1ZskQvv/yyKisrtWzZMgUHB+vKK6/UV199pfHjxzfszgJoEMQMgEa3fv16hYSE6NSpUzp58qRGjhyprKwsvfbaa9UipaKiQldddZXfsl69ep13216vV19//bX69evnt7xfv37617/+JUn65JNP1L17dwUHB/sePx1QAOxDzABodIMGDdLSpUvVvHlzxcTEqHnz5nrvvfckSW+99ZZiY2P91ne73X73W7VqddHncLlcfveNMb5lxpifMj6AAEPMAGh0rVq10mWXXea3rHPnznK73Tp48KDfR0q1FRYWppiYGL377rsaMGCAb/mOHTt07bXX+p7rz3/+s8rKyhQUFCRJ2rVrV52fE4CziBkAASE0NFRZWVl65JFHVFVVpf79+8vr9WrHjh0KCQlRenp6jbc1ZcoUzZo1S5deeql69Oih5cuXa8+ePXr55ZclSWlpaZoxY4buvfdezZw5U1988YUWLFjQULsGoIERMwACxhNPPKF27dopNzdX//M//6PWrVurZ8+eevTRR2u1nYcfflher1eTJ09WUVGROnfurHXr1ikxMVGSFBISojfffFMPPPCArrrqKnXu3Fnz5s3Tbbfd1hC7BaCBuQwfHgMAAItx0TwAAGA1YgYAAFiNmAEAAFYjZgAAgNWIGQAAYDViBgAAWI2YAQAAViNmAACA1YgZAABgNWIGAABYjZgBAABWI2YAAIDV/h/8/JLskPyd0gAAAABJRU5ErkJggg=="/>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The comparison shows that the LIP period has much higher levels of perimortem trauma than the MH, confirming the expectation that this period was significantly more lethal than the previous one.</p>
 </div>
 </div>
 </div>
